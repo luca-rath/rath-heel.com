@@ -1,8 +1,8 @@
-import Image from 'next/image';
 import portrait from '../../assets/images/portrait.jpeg';
 import GitHubIcon from '../../assets/icons/github.svg';
 import LinkedInIcon from '../../assets/icons/linkedin.svg';
 import SocialLink from '../atoms/social-link';
+import Image from '../atoms/image';
 
 export default function Header() {
     return (
