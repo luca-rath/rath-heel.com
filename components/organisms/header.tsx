@@ -1,8 +1,7 @@
-import portrait from '../../assets/images/portrait.jpeg';
+import Image from 'next/image';
 import GitHubIcon from '../../assets/icons/github.svg';
 import LinkedInIcon from '../../assets/icons/linkedin.svg';
 import SocialLink from '../atoms/social-link';
-import Image from '../atoms/image';
 
 export default function Header() {
     return (
@@ -10,7 +9,7 @@ export default function Header() {
             <div className="mx-auto flex max-w-sm flex-col items-center gap-y-4 sm:max-w-md">
                 <Image
                     className="h-32 w-32 rounded-full object-cover drop-shadow-lg"
-                    src={portrait}
+                    src="/images/luca-rath-heel.jpeg"
                     alt="Luca Rath-Heel"
                     width={128}
                     height={128}
