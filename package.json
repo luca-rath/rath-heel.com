@@ -14,16 +14,17 @@
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "slugger": "^1.0.1",
-        "zod": "^3.19.1"
+        "zod": "^3.19.1",
+        "zod-form-data": "^1.2.4"
     },
     "devDependencies": {
         "@svgr/webpack": "^6.5.1",
         "@tailwindcss/forms": "^0.5.3",
         "@tailwindcss/typography": "^0.5.8",
-        "@typescript-eslint/eslint-plugin": "^5.43.0",
         "@types/node": "18.11.9",
         "@types/react": "18.0.25",
         "@types/react-dom": "18.0.9",
+        "@typescript-eslint/eslint-plugin": "^5.43.0",
         "autoprefixer": "^10.4.13",
         "eslint": "8.27.0",
         "eslint-config-next": "13.0.3",
