@@ -5,7 +5,7 @@ import Header from '../components/organisms/header';
 
 export default function Homepage() {
     return (
-        <div className="space-y-16 lg:space-y-24">
+        <div className="space-y-16 pt-6 lg:space-y-24">
             <Header />
 
             <main className="space-y-24 lg:space-y-32">

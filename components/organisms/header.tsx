@@ -25,11 +25,11 @@ export default function Header() {
 
                 <div className="mt-4 flex gap-4">
                     <SocialLink label="Find me on GitHub" url="https://github.com/luca-rath">
-                        <GitHubIcon className="h-10 w-10" />
+                        <GitHubIcon className="h-10 w-10" role="img" />
                     </SocialLink>
 
                     <SocialLink label="Follow me on LinkedIn" url="https://linkedin.com/in/luca-rath">
-                        <LinkedInIcon className="h-10 w-10" />
+                        <LinkedInIcon className="h-10 w-10" role="img" />
                     </SocialLink>
                 </div>
             </div>
