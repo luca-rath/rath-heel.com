@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { EnvironmentPlugin } = require('webpack');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
@@ -11,6 +14,8 @@ const nextConfig = {
             test: /\.svg$/,
             use: '@svgr/webpack',
         });
+
+        config.plugins.push(new EnvironmentPlugin(['SENDGRID_API_KEY', 'SENTRY_DSN']));
 
         return config;
     },
