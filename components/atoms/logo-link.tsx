@@ -27,7 +27,7 @@ export default function LogoLink({ label, url, Component, ...variants }: Props) 
             href={url}
             target="_blank"
             rel="nofollow noreferrer"
-            className="group/logowall-link outline-none transition focus-visible:scale-105"
+            className="group/logowall-link flex h-14 items-center outline-none transition focus-visible:scale-105"
             aria-label={label}
         >
             <Component role="img" className={logoVariants({ ...variants })} />

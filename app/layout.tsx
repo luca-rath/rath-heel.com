@@ -15,8 +15,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
                 <div className="relative">
                     <div className="flex min-h-screen flex-col sm:px-8 md:px-12 lg:px-16">
                         <div className="mx-auto w-full max-w-6xl">
-                            <div className="relative px-4 sm:px-8 md:px-12 lg:px-16">
-                                <div className="mx-auto max-w-2xl pt-6 pb-12 sm:py-16 lg:max-w-5xl">{children}</div>
+                            <div className="relative px-6 sm:px-8 md:px-12 lg:px-16">
+                                <div className="mx-auto max-w-2xl lg:max-w-5xl">{children}</div>
                             </div>
                         </div>
 
