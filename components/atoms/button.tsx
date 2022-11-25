@@ -27,7 +27,7 @@ type Props = PropsWithChildren<{
 export default function Button({ type = 'button', children, disabled = false, onClick, ...props }: Props) {
     return (
         <button type={type} disabled={disabled} onClick={onClick} className={buttonVariants({ ...props })}>
-            <span className="block skew-x-6 transition group-hover/button:skew-x-12 group-focus-visible/button:skew-x-12">
+            <span className="transitio-transform block skew-x-6 text-white group-hover/button:skew-x-12 group-focus-visible/button:skew-x-12">
                 {children}
             </span>
         </button>

@@ -97,7 +97,12 @@ export default function ContactSection() {
                     </Button>
                 </div>
 
-                <input type="email" name="honung" className="sr-only" tabIndex={-1} />
+                <div className="sr-only">
+                    <label htmlFor="honung" className="sr-only">
+                        Email
+                    </label>
+                    <input id="honung" type="email" name="honung" className="sr-only" tabIndex={-1} />
+                </div>
             </form>
 
             {formState === FormState.ERROR && (

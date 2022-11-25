@@ -13,6 +13,7 @@ export default function Header() {
                     alt="Luca Rath-Heel"
                     width={128}
                     height={128}
+                    loading="eager"
                 />
 
                 <h1 id="title" className="text-center text-4xl font-extrabold tracking-tight text-zinc-800 sm:text-5xl">
