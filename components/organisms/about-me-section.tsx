@@ -14,7 +14,7 @@ export default function AboutMeSection() {
                 <br />
                 Enjoy building <b>business software</b> the most.
                 <br />
-                Passionate <b>skier</b> in the <b>austrian alps</b>.
+                Passionate <b>skier</b> in the <b>Austrian Alps</b>.
             </p>
         </Section>
     );
