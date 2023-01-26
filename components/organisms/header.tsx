@@ -21,7 +21,7 @@ export default function Header() {
                 </h1>
 
                 <p id="description" className="prose prose-xl prose-zinc text-center sm:prose-2xl">
-                    Hi 👋🏻 I&apos;m Luca and I work as a freelance software engineer.
+                    Hi 👋🏻 I&apos;m Luca and I work as a full&nbsp;stack software&nbsp;engineer.
                 </p>
 
                 <div className="mt-4 flex gap-4">
