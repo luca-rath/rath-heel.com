@@ -9,7 +9,7 @@ export default function Header() {
             <div className="mx-auto flex max-w-sm flex-col items-center gap-y-4 sm:max-w-md">
                 <Image
                     className="h-32 w-32 rounded-full object-cover drop-shadow-lg"
-                    src="/images/luca-rath-heel.png?v=2"
+                    src="/images/luca-rath-heel.png?v=3"
                     alt="Luca Rath-Heel"
                     width={128}
                     height={128}
