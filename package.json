@@ -1,5 +1,5 @@
 {
-    "name": "rath-heel.com",
+    "name": "v2.rath-heel.com",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -9,35 +9,33 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "@cloudflare/pages-plugin-sentry": "^1.0.0",
-        "@sendgrid/helpers": "^7.7.0",
-        "class-variance-authority": "^0.3.0",
-        "next": "13.0.3",
-        "react": "18.2.0",
-        "react-dom": "18.2.0",
+        "@marsidev/react-turnstile": "^1.0.2",
+        "class-variance-authority": "^0.7.0",
+        "next": "14.2.14",
+        "nodemailer": "^6.9.15",
+        "react": "^18",
+        "react-dom": "^18",
         "slugger": "^1.0.1",
-        "tailwind-merge": "^1.8.0",
-        "zod": "^3.19.1",
-        "zod-form-data": "^1.2.4"
+        "tailwind-merge": "^2.5.3",
+        "zod": "^3.23.8",
+        "zod-form-data": "^2.0.2"
     },
     "devDependencies": {
-        "@cloudflare/workers-types": "^4.20221111.1",
-        "@svgr/webpack": "^6.5.1",
-        "@tailwindcss/forms": "^0.5.3",
-        "@tailwindcss/typography": "^0.5.8",
-        "@types/node": "18.11.9",
-        "@types/react": "18.0.25",
-        "@types/react-dom": "18.0.9",
-        "@typescript-eslint/eslint-plugin": "^5.43.0",
-        "autoprefixer": "^10.4.13",
-        "eslint": "8.27.0",
-        "eslint-config-next": "13.0.3",
-        "eslint-config-prettier": "^8.5.0",
-        "postcss": "^8.4.19",
-        "prettier": "^2.7.1",
-        "prettier-plugin-tailwindcss": "^0.1.13",
-        "tailwindcss": "^3.2.4",
-        "typescript": "4.9.3",
-        "vercel": "^28.5.6"
+        "@svgr/webpack": "^8.1.0",
+        "@tailwindcss/forms": "^0.5.9",
+        "@tailwindcss/typography": "^0.5.15",
+        "@types/node": "^20",
+        "@types/nodemailer": "^6.4.16",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.14",
+        "eslint-config-prettier": "^9.1.0",
+        "postcss": "^8",
+        "prettier": "^3.3.3",
+        "prettier-plugin-tailwindcss": "^0.6.8",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
     }
 }
