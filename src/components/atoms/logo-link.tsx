@@ -29,7 +29,10 @@ export default function LogoLink({ label, url, Component, className, ...variants
             href={url}
             target="_blank"
             rel="nofollow noreferrer"
-            className={twMerge("group/logowall-link flex h-14 items-center outline-none transition-transform focus-visible:scale-105", className)}
+            className={twMerge(
+                'group/logowall-link flex h-14 items-center outline-none transition-transform focus-visible:scale-105',
+                className,
+            )}
             aria-label={label}
         >
             <Component role="img" className={logoVariants({ ...variants })} />

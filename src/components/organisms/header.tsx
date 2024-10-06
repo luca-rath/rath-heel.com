@@ -16,33 +16,20 @@ export default function Header() {
                     loading="eager"
                 />
 
-                <h1
-                    id="title"
-                    className="text-center text-4xl font-extrabold tracking-tight text-zinc-800 sm:text-5xl"
-                >
+                <h1 id="title" className="text-center text-4xl font-extrabold tracking-tight text-zinc-800 sm:text-5xl">
                     Luca Rath-Heel
                 </h1>
 
-                <p
-                    id="description"
-                    className="prose prose-xl prose-zinc text-center sm:prose-2xl"
-                >
-                    Hi 👋🏻 I&apos;m Luca and I work as a full&nbsp;stack
-                    software&nbsp;engineer.
+                <p id="description" className="prose prose-xl prose-zinc text-center sm:prose-2xl">
+                    Hi 👋🏻 I&apos;m Luca and I work as a full&nbsp;stack software&nbsp;engineer.
                 </p>
 
                 <div className="mt-4 flex gap-4">
-                    <SocialLink
-                        label="Find me on GitHub"
-                        url="https://github.com/luca-rath"
-                    >
+                    <SocialLink label="Find me on GitHub" url="https://github.com/luca-rath">
                         <GitHubIcon className="h-10 w-10" role="img" />
                     </SocialLink>
 
-                    <SocialLink
-                        label="Follow me on LinkedIn"
-                        url="https://linkedin.com/in/luca-rath"
-                    >
+                    <SocialLink label="Follow me on LinkedIn" url="https://linkedin.com/in/luca-rath">
                         <LinkedInIcon className="h-10 w-10" role="img" />
                     </SocialLink>
                 </div>

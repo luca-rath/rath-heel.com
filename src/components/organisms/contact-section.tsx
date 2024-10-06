@@ -17,7 +17,7 @@ type TurnstileStatus = {
 };
 
 export default function ContactSection() {
-    const [actionState, formAction, pending] = useFormState(
+    const [actionState, formAction] = useFormState(
         async (_prevState: unknown, formData: FormData | null): Promise<ActionState> => {
             if (formData === null) {
                 return undefined;

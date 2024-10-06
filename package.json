@@ -1,12 +1,13 @@
 {
-    "name": "v2.rath-heel.com",
+    "name": "rath-heel.com",
     "version": "0.1.0",
     "private": true,
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "format": "prettier --write ./src"
     },
     "dependencies": {
         "@marsidev/react-turnstile": "^1.0.2",
