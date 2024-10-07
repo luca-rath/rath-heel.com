@@ -2,6 +2,8 @@ import { PropsWithChildren } from 'react';
 import Footer from '@/components/organisms/footer';
 import '@/styles/globals.css';
 
+export const runtime = 'edge';
+
 export default function RootLayout({ children }: PropsWithChildren) {
     return (
         <html lang="en" className="scroll-pt-8 scroll-smooth">
