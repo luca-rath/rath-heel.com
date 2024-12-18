@@ -1,0 +1,27 @@
+---
+import { twMerge } from 'tailwind-merge';
+import Field from './field.astro';
+
+type Props = astroHTML.JSX.InputHTMLAttributes & {
+    name: string;
+    label: string;
+    required?: boolean;
+    disabled?: boolean;
+};
+
+const { name, label, required = false, disabled = false, id, class: className, ...props } = Astro.props;
+---
+
+<Field id={id || name} label={label} disabled={disabled} required={required}>
+    <input
+        name={name}
+        id={id || name}
+        required={required}
+        disabled={disabled}
+        class={twMerge(
+            'block w-full border-0 bg-transparent p-0 text-zinc-900 placeholder-zinc-500 focus:ring-0 sm:text-sm',
+            className,
+        )}
+        {...props}
+    />
+</Field>

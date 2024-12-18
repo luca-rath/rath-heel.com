@@ -1,0 +1,42 @@
+---
+import { cva, type VariantProps } from 'class-variance-authority';
+import { twMerge } from 'tailwind-merge';
+import ExampleSVG from '../../assets/svg/typescript.svg';
+
+const logoVariants = cva(
+    'transition group-hover/logowall-link:drop-shadow-lg group-focus-visible/logowall-link:drop-shadow-lg',
+    {
+        variants: {
+            size: {
+                xs: 'h-8',
+                sm: 'h-10',
+                md: 'h-12',
+                lg: 'h-14',
+            },
+        },
+    },
+);
+
+type Props = astroHTML.JSX.AnchorHTMLAttributes & {
+    label: string;
+    href: string;
+    Component: typeof ExampleSVG;
+} & Omit<VariantProps<typeof logoVariants>, 'size'> &
+    Required<Pick<VariantProps<typeof logoVariants>, 'size'>>;
+
+const { label, href, class: className, target, rel, Component, size, ...props } = Astro.props;
+---
+
+<a
+    href={href}
+    aria-label={label}
+    target={target ?? '_blank'}
+    rel={rel ?? 'nofollow noreferrer'}
+    class={twMerge(
+        'group/logowall-link flex h-14 items-center outline-none transition-transform focus-visible:scale-105',
+        className,
+    )}
+    {...props}
+>
+    <Component role="img" class={logoVariants({ size })} />
+</a>

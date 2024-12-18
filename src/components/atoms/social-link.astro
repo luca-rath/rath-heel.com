@@ -1,0 +1,24 @@
+---
+import { twMerge } from 'tailwind-merge';
+
+type Props = astroHTML.JSX.AnchorHTMLAttributes & {
+    label: string;
+    href: string;
+};
+
+const { label, href, class: className, target, rel, ...props } = Astro.props;
+---
+
+<a
+    href={href}
+    aria-label={label}
+    target={target ?? '_blank'}
+    rel={rel ?? 'nofollow noreferrer noopener'}
+    class={twMerge(
+        'text-zinc-600 outline-none drop-shadow transition hover:text-zinc-900 focus-visible:scale-105 focus-visible:text-zinc-900',
+        className,
+    )}
+    {...props}
+>
+    <slot />
+</a>

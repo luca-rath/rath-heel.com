@@ -1,0 +1,27 @@
+---
+import slugger from 'slugger';
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+const slug = slugger(title);
+---
+
+<section aria-labelledby={slug} class="space-y-12 lg:space-y-16">
+    <h2 id={slug} class="flex justify-center">
+        <a
+            href={`#${slug}`}
+            class="group/headline block -skew-x-6 rounded-lg bg-zinc-900 px-8 py-4 text-center text-3xl font-black lowercase text-white shadow-sm outline-none transition hover:-skew-x-12 focus-visible:-skew-x-12 focus-visible:ring-4 focus-visible:ring-zinc-900 focus-visible:ring-offset-4 sm:text-4xl"
+        >
+            <span
+                class="block skew-x-6 text-white transition-transform group-hover/headline:skew-x-12 group-focus-visible/headline:skew-x-12"
+            >
+                {title}
+            </span>
+        </a>
+    </h2>
+
+    <slot />
+</section>

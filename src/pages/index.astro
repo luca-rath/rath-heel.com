@@ -1,0 +1,20 @@
+---
+import AboutMeSection from '../components/organisms/about-me-section.astro';
+import Header from '../components/organisms/header.astro';
+import TechStackSection from '../components/organisms/tech-stack-section.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+    title="Luca Rath-Heel - Full Stack Software Engineer"
+    description="I'm a full stack web developer building business software and other projects using modern web technologies and frameworks like TypeScript and ReactJS."
+>
+    <div class="space-y-16 pt-12 sm:pt-16 lg:space-y-24">
+        <Header />
+
+        <main class="space-y-24 lg:space-y-32">
+            <AboutMeSection />
+            <TechStackSection />
+        </main>
+    </div>
+</Layout>

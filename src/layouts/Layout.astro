@@ -1,0 +1,55 @@
+---
+import Footer from '../components/organisms/footer.astro';
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-pt-8 scroll-smooth">
+    <head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta charset="UTF-8" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3" />
+        <link rel="manifest" href="/site.webmanifest?v=3" />
+        <meta name="apple-mobile-web-app-title" content="rath-heel.com" />
+        <meta name="application-name" content="rath-heel.com" />
+        <meta name="msapplication-TileColor" content="#2b5797" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+
+    <body class="flex h-full flex-col bg-zinc-50">
+        <div class="fixed inset-0 flex justify-center sm:px-8 md:px-12 lg:px-16">
+            <div class="flex w-full max-w-6xl">
+                <div class="w-full bg-white ring-1 ring-zinc-100"></div>
+            </div>
+        </div>
+
+        <div class="relative">
+            <div class="flex min-h-screen flex-col sm:px-8 md:px-12 lg:px-16">
+                <div class="mx-auto w-full max-w-6xl">
+                    <div class="relative px-6 sm:px-8 md:px-12 lg:px-16">
+                        <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                            <slot />
+                        </div>
+                    </div>
+                </div>
+
+                <Footer />
+            </div>
+        </div>
+    </body>
+    <style>
+        :root {
+        }
+    </style>
+</html>
